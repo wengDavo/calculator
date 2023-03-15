@@ -1,0 +1,51 @@
+// modules are smaller bit of code that are reusbale on the page and are part of a sinle page layout
+// this conatains the reussbale classes
+
+.calculator__display{
+    padding-inline:1rem;
+    text-align: right;
+    overflow: hidden;
+}
+
+.calculator__keys{
+    gap: 1.5rem;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.calculator__row{
+    display:flex;
+    justify-content: space-between;
+    gap: 1rem;
+
+    & button:last-child{
+        background-color: var(--almost-orange);
+    }
+
+}
+
+.first-row button:not(:last-child){
+    background-color: var(--almost-gray);
+    color: var(--almost-black);
+}
+
+.round-btn{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+
+    display: grid;
+    place-content: center;
+
+    background-color:var(--second-gray);
+
+    &--wide{
+        flex-grow: 1;
+        border-radius: 50px;
+        
+        place-content: center start;
+        padding-left: 6%;
+    }
+
+}
+

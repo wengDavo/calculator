@@ -1,0 +1,13 @@
+// layout styles wil divide the page into major sections 
+// like top level sections
+// these layouts will hold multiple css modules like boxes, cards, ul list etc
+// layouts like header, main, footer
+
+.calculator{
+    display: grid;
+    place-content: center;
+    grid-template-columns:minmax(50vw);
+    gap: 2rem;
+    height: 100svh;
+    padding-top: 2rem;
+}

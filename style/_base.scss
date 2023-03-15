@@ -1,0 +1,40 @@
+// base is used for defaults like html, body, psuedo classes 
+// can include your css resets, variables
+// things which are used to create consistency across the web page
+// this should only include bare element selectors not with id and classes
+
+
+//CSS RESET
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+//VARIBLES
+:root{
+    // color varibales
+    --almost-black:#1b1a1a;
+    --almost-white:#EFF2F9;
+    --almost-gray:#B5BFC6;
+    --second-gray:#333;
+    --almost-orange:#ffab0f;  
+}
+
+
+body{
+    color: var(--almost-white);
+    background-color: var(--almost-black);
+
+    font-size: 3.2rem;
+    font-family: monospace;
+}
+
+button{
+    font-size: 0.8em;
+    font-family: inherit;
+    color:var(--almost-white);
+    border: transparent;
+
+    cursor: pointer;
+}   
